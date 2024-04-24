@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        alert("Digite a duração da viagem , informando primeiro os dias e logo depois as horas.")
+        var dia = parseInt(prompt("digite os dias gastos na viagem. (Exemplo: se a viagem foi de 3 dias e 4 horas, digite 3.)"))
+        var horas = parseFloat(prompt("digite as horas gastas na viagem. (Exemplo: se a viagem foi de 3 dias, 4 horas e 50 minutos, digite 4.5)"))
+        var mult = dia*24
+        var soma = mult+horas
+        var soma_arredonda = soma.toFixed(2)
+        alert(`A quantidade de horas gastas na viagem foi de ${soma_arredonda}`)
+    </script>
+</body>
+</html>

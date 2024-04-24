@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var gasolina = Number(prompt('Digite "1" se você utilizou gasolina normal ou digite "2" se você utilizou gasolina com álcool.'))
+        if (gasolina == 1){
+            var litro_de_gasolina = Number(prompt('Quantos litros foram gastos neste trageto? ')) 
+            var distancia_percorrida = Number(prompt('Qual a distancia percorrida?'))
+            var consumo_de_gasolina1 =  distancia_percorrida/litro_de_gasolina
+            var consumo_de_gasolina = consumo_de_gasolina1.toFixed(2)
+            var escolha1=Number(prompt(`O consumo de gasolina é ${consumo_de_gasolina}, se deseja calcular o preço por quilometro digite 1 novamente, se deseja encerrar o programa digite 0.`))
+            if (escolha1 == 1){
+                var preco_por_litro = 2.90 * litro_de_gasolina
+                var preco_por_kilometro1 = preco_por_litro/consumo_de_gasolina1
+                var preco_por_kilometro = preco_por_kilometro1.toFixed(2)
+                alert(`O preço de consumo pelos litros utilizados foi de ${preco_por_kilometro}`)
+            }
+            else if (escolha1 == 0) {
+                alert("programa encerrado.")
+            }
+        }
+        else if(gasolina == 2) {
+            var litro_de_alcool = Number(prompt('Quantos litros foram gastos neste trageto? ')) 
+            var distancia_percorrida = Number(prompt('Qual a distancia percorrida?'))
+            var consumo_de_alcool1 =  distancia_percorrida/litro_de_alcool
+            var consumo_de_alcool = consumo_de_alcool1.toFixed(2)
+            var escolha2=Number(prompt(`O consumo de gasolina é ${consumo_de_alcool}, se deseja calcular o preço por quilometro digite 2 novamente, se deseja encerrar o programa digite 0.`))
+            if (escolha2 == 2){
+                var preco_por_litro = 2.40 * litro_de_alcool
+                var preco_por_kilometro1 = preco_por_litro/consumo_de_alcool1
+                var preco_por_kilometro = preco_por_kilometro1.toFixed(2)
+                alert(`O preço de consumo pelos litros utilizados foi de ${preco_por_kilometro}`)
+            }
+            else if (gasolinha == 0) {
+                alert("programa encerrado.")
+            }           
+        }
+        
+    </script>
+</body>
+</html>
